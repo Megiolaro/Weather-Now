@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, rgba(89, 76, 238, 1) 0%, #8dd0f5 100%);
+}
+
+.container {
+    background-color: #5c54ed;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 2rem;
+    color: #fdfdfd;
+    border-radius: 1rem;
+    max-width: 400px;
+}
+
+.form h3 {
+    text-align: center;
+    font-size: 28px;
+}
+
+.form-input-container {
+    display: flex;
+    margin: 30px 0;
+}
+
+.form input {
+    padding: 0.8rem;
+    border: none;
+    flex: 1;
+    border-radius: 4px;
+}
+
+.form button {
+    padding: 0.8rem;
+    min-width: 50px;
+    margin-left: 8px;
+    background-color: #8dd0f5;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#weather-data, #error-message {
+    border-top: 1px solid #fff;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    text-align: center;
+}
+
+.hide{
+    display: none;
+}
+
+#weather-data h2 i {
+    font-size: 1.5rem;
+    margin: 30px 0;
+}
+
+#weather-data span {
+    margin: 0.6rem;
+}
+
+.container-h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#temperature {
+    font-size: 4rem;
+}
+
+#country {
+    height: 40px;
+}
+
+#description-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.6rem 0;
+}
+
+#description {
+    text-transform: capitalize;
+    font-weight: bold;
+    margin: 30px 0;
+    font-size: 20px;
+}
+
+#details-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+#details-container .humidity {
+    border-right: 1px solid #fff;
+    margin: 0.6rem;
+    padding: 0.6rem;
+}
+
+/* Loader */
+#loader i {
+    animation: rotate 1.5s linear infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes rotate {
+    to {
+        transform: rotate(360deg);
+    }
+}
